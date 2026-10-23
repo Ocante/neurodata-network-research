@@ -98,3 +98,57 @@ See [Methodology](docs/methodology.md) for implementation details and [Limitatio
 ## Data provenance and licensing
 
 **Pending verification:** Confirm the original public dataset record, preferred citation, and data-use terms before publishing derived CSV, graph, or figure outputs. No license is asserted for the original NWB recording or derived scientific data in this README.
+
+## Dataset Identification and Reproducibility
+
+The analysis uses publicly available electrophysiological recordings
+from the International Brain Laboratory (IBL), distributed through
+the DANDI Archive.
+
+**Dataset:** [DANDI:000409](https://dandiarchive.org/dandiset/000409)
+
+### Recording Identification
+
+| Property | Value |
+|---|---|
+| DANDIset | `000409` |
+| Subject | `sub-CSH-ZAD-001` |
+| Session | `3e7ae7c0-fe8b-487c-9354-036236fa1010` |
+| NWB identifier | `15a9c6eb-d2ac-4d49-ac7b-936c1fe3cb39` |
+| Recording date | January 16, 2020 |
+| Required file | `desc-processed_behavior+ecephys.nwb` |
+| Download size | Approximately 655.8 MB |
+
+The analysis requires the processed NWB file, not the
+approximately 71 GB raw electrophysiology file.
+
+### Dataset Characteristics
+
+| Metric | Value |
+|---|---:|
+| Recorded units | 519 |
+| Good-quality units | 113 |
+| Multi-unit activity units | 406 |
+| Behavioral trials | 854 |
+| Spikes in good-quality units | 10,424,085 |
+| Time bins (1-second resolution) | 5,418 |
+
+### Derived Network
+
+| Metric | Value |
+|---|---:|
+| Nodes | 113 |
+| Edges | 1,621 |
+| Density | 0.256163 |
+| Connected components | 8 |
+| Largest connected component | 106 |
+| Absolute Pearson correlation threshold | 0.30 |
+
+**Data access:** Download the processed NWB file for subject
+`sub-CSH-ZAD-001` from DANDIset `000409` and place it in the
+project's `data/` directory.
+
+The original dataset is not redistributed in this repository.
+Correlations represent statistical associations, not anatomical
+or causal connections.
+
