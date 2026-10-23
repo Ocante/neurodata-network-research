@@ -1,0 +1,33 @@
+﻿# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# Raw scientific datasets
+data/
+*.nwb
+*.h5
+*.hdf5
+
+# Large intermediate results
+results/*.npy
+
+# Gephi working files
+*.gephi
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
